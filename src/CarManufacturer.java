@@ -6,7 +6,7 @@ public class CarManufacturer {
     private String name;
     private ArrayList<ElectricCar> carModels;
 
-    public CarManufacturer() {
+    protected CarManufacturer() {
         this("","");
     }
 
@@ -47,12 +47,4 @@ public class CarManufacturer {
         return info;
     }
 
-    public ElectricCar getElectricCar(String id) {
-        for (ElectricCar electricCar : carModels) {
-            if (electricCar.getId().equals(id)) {
-                return electricCar;
-            }
-        }
-        return null;
-    }
 }

@@ -51,6 +51,6 @@ public class Tesla extends ElectricCar
     @Override
     public String toString() {
         String info="";
-        return info+="ID: "+getId()+", "+"Model name: "+getCarModelName()+", "+getChargingStation().toString()+", "+getCarManufacturer().toString()+", "+getBatteryCapacity()+" kWh"+", "+"Auto Pilot Enabled: "+(isAutoPilotEnabled()?"yes":"No")+", "+"Full Self Driving Enabled: "+(isFullSelfDrivingEnabled()?"yes":"No")+", "+"Tesla Theatre Enabled: "+(isTeslaTheatreEnabled()?"yes":"No");
+        return info+="ID: "+getId()+", "+"Model name: "+getCarModelName()+", "+getChargingStation().toString()+", "+getCarManufacturer().toString()+", "+getBatteryCapacity()+" kWh"+", "+"Auto Pilot Enabled: "+(isAutoPilotEnabled()?"Yes":"No")+", "+"Full Self Driving Enabled: "+(isFullSelfDrivingEnabled()?"Yes":"No")+", "+"Tesla Theatre Enabled: "+(isTeslaTheatreEnabled()?"Yes":"No");
     }
 }

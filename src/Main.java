@@ -9,10 +9,10 @@ public class Main {
         ChargingStation chargingStation01 = new ChargingStation("station001", "JB", 2000);
         ChargingStation chargingStation02 = new ChargingStation("station002", "KL", 1500);
 
-        ElectricCar ModelS = new Tesla("C001", "ModelS", chargingStation01, carManufacturerTesla, 100, true, true, true);
-        ElectricCar ModelE = new Tesla("C002", "ModelE", chargingStation01, carManufacturerTesla, 100, true, true, true);
-        ElectricCar ModelX = new Tesla("C003", "ModelX", chargingStation01, carManufacturerTesla, 100, true, true, true);
-        ElectricCar ModelY = new Tesla("C004", "ModelY", chargingStation01, carManufacturerTesla, 100, true, true, true);
+        ElectricCar ModelS = new Tesla("C001", "ModelS", chargingStation01, carManufacturerTesla, 100, false, true, false);
+        ElectricCar ModelE = new Tesla("C002", "ModelE", chargingStation01, carManufacturerTesla, 120, true, true, true);
+        ElectricCar ModelX = new Tesla("C003", "ModelX", chargingStation01, carManufacturerTesla, 130, false, true, true);
+        ElectricCar ModelY = new Tesla("C004", "ModelY", chargingStation01, carManufacturerTesla, 140, true, false, true);
 
         carManufacturerTesla.setCarModels(ModelS);
         carManufacturerTesla.setCarModels(ModelE);
@@ -21,8 +21,8 @@ public class Main {
 
         CarManufacturer carManufacturerOra = new CarManufacturer("manufacturerOra", "Ora");
 
-        ElectricCar Ora001 = new Ora("C005", "Ora001", chargingStation01, carManufacturerOra, 100, true, true);
-        ElectricCar Ora002 = new Ora("C006", "Ora002", chargingStation01, carManufacturerOra, 100, true, true);
+        ElectricCar Ora001 = new Ora("C005", "Ora001", chargingStation01, carManufacturerOra, 80, false, true);
+        ElectricCar Ora002 = new Ora("C006", "Ora002", chargingStation01, carManufacturerOra, 70, true, false);
 
         carManufacturerList.add(carManufacturerTesla);
         carManufacturerList.add(carManufacturerOra);

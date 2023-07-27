@@ -37,6 +37,6 @@ public class Ora extends ElectricCar {
     @Override
     public String toString() {
         String info = "";
-        return info += "ID: " + getId() + " " + "Model name: " + getCarModelName() + " " + getChargingStation().toString() + " "+getCarManufacturer().toString() + " " + "Battery capacity: "+getBatteryCapacity() + " " + "Panaromic Sunroof: "+(isHasPanaromicSunroof()?"yes":"No") + " " + "Wireless Charging: "+ (isHasWirelessCharging()?"yes":"No");
+        return info += "ID: " + getId() + ", " + "Model name: " + getCarModelName() + ", " + getChargingStation().toString() + ", "+getCarManufacturer().toString() + ", " + "Battery capacity: "+getBatteryCapacity() +" kWh"+ ", " + "Panaromic Sunroof: "+(isHasPanaromicSunroof()?"Yes":"No") + ", " + "Wireless Charging: "+ (isHasWirelessCharging()?"Yes":"No");
     }
 }
